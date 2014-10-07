@@ -1,0 +1,24 @@
+{
+  "Version": "1.0.0.0",
+  "Releases":
+    [{
+  					  "ReleaseType":  "",
+  					  "Name":         "ITS ERP System v1.0.0.1013",
+  					  "Version":      "1.0.0.1013",
+  					  "Timestamp":    "17 Jul 2014",
+  					  "Priority":     "Important",
+  					  "ReleaseNotes": "",
+  					  "Changelog":
+  					    [],
+  					  "Parameters":
+  					    [{"IconURI":"NULL"},
+  					     {"InstallerHash":"094EC4A567FE599BF584D3E686942ACA786FD488"},
+  					     {"InstallerSize":"380665116"},
+  					     {"InstallerURI":"NULL"},
+  					     {"PackageCode":"{6C3F19A9-F6E3-41A1-949B-DB84705789A0}"},
+  					     {"PageURI":"file:\/\/its-fs\/Production%20Data\/ITS%20ERP%20System%20Deployment%20Server\/index.html"},
+  					     {"ProductCode":"{461F1AE2-E540-497D-ACC7-2CA8713E2AA5}"},
+  					     {"UpgradeCode":"{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}"}]
+  					}],
+  "ManifestSignature": "635925FBF9487F04F1BAC8A12EAB39922C1C781D25D7C8E1F10A00805C6D56DD78F271A77227B0D515F40B315CFC0467EC81E83AE1069DBDCD5C882D7B25DF912FCBF133C42F9D2B4EFC88D0B7A7DB0675CB70E7990102F814673D5A9F20ABCFA0F56597902F63BC1398D60469E1F28C406F6D153687F38C7C53F33F128E2FBA"
+}

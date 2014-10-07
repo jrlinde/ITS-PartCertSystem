@@ -1,0 +1,5 @@
+ITS ERP System v1.0.0.1026 (11 Sep 2014)
+Release Notes: 
+Version: 1.0.0.1026
+Priority: Important
+Download (25.7MB): file://its-fs/Production%20Data/ITS%20ERP%20System%20Deployment%20Server/ITSERPSystem-1.0.0.1026.exe

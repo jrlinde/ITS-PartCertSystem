@@ -1,0 +1,479 @@
+[001205][004631.924sec][2014-07-17T18:19:54.272Z][DeployActivation][Deploy Architect Edition v2013.1.0.1807 registered to Tommy Joyner (ITS)]
+[001206][004631.935sec][2014-07-17T18:19:54.283Z][StepBegin][Deploy-Step-120-Setup.vi]
+[001207][004631.981sec][2014-07-17T18:19:54.330Z][StepEnd=000047msec][Deploy-Step-120-Setup.vi]
+[001208][004631.991sec][2014-07-17T18:19:54.340Z][StepBegin][Deploy-Step-140-SourceCodeControlUpdateCheck.vi]
+[001209][004631.999sec][2014-07-17T18:19:54.348Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001210][004632.022sec][2014-07-17T18:19:54.371Z][StepEnd=000031msec][Deploy-Step-140-SourceCodeControlUpdateCheck.vi]
+[001211][004632.032sec][2014-07-17T18:19:54.380Z][StepBegin][Deploy-Step-160-PreFlightChecks.vi]
+[001212][004632.039sec][2014-07-17T18:19:54.387Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001213][004632.060sec][2014-07-17T18:19:54.408Z][StepEnd=000028msec][Deploy-Step-160-PreFlightChecks.vi]
+[001214][004632.070sec][2014-07-17T18:19:54.418Z][StepBegin][Deploy-Step-180-PerformVIAnalyzerTests.vi]
+[001215][004632.078sec][2014-07-17T18:19:54.426Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001216][004632.107sec][2014-07-17T18:19:54.455Z][StepEnd=000037msec][Deploy-Step-180-PerformVIAnalyzerTests.vi]
+[001217][004632.117sec][2014-07-17T18:19:54.465Z][StepBegin][Deploy-Step-200-PerformUnitTests.vi]
+[001218][004632.124sec][2014-07-17T18:19:54.472Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001219][004632.146sec][2014-07-17T18:19:54.494Z][StepEnd=000029msec][Deploy-Step-200-PerformUnitTests.vi]
+[001220][004632.156sec][2014-07-17T18:19:54.504Z][StepBegin][Deploy-Step-260-BuildVersionSync.vi]
+[001221][004632.177sec][2014-07-17T18:19:54.525Z][BuildVersionSync]
+[001222][004632.205sec][2014-07-17T18:19:54.553Z][StepEnd=000048msec][Deploy-Step-260-BuildVersionSync.vi]
+[001223][004632.215sec][2014-07-17T18:19:54.563Z][StepBegin][Deploy-Step-280-BuildSpecSettingsSync.vi]
+[001224][004632.237sec][2014-07-17T18:19:54.585Z][BuildInfoSync][Deploy-Deployment-Directory-Logs=C:\LabVIEW Development\ITS ERP System\Deployments\Logs, Deploy-Installer-InstallerFilename=ITSERPSystem-1.0.0.1019, Deploy-App-DisplayName=ITS ERP System, Deploy-App-Publisher=International Test Solutions, Deploy-App-Description=This application is used by this group to achieve this task., Deploy-App-LegalCopyright=Copyright © 2014 ITS]
+[001225][004632.255sec][2014-07-17T18:19:54.604Z][StepEnd=000041msec][Deploy-Step-280-BuildSpecSettingsSync.vi]
+[001226][004632.265sec][2014-07-17T18:19:54.614Z][StepBegin][Deploy-Step-300-PreBuildSpecSettings.vi]
+[001227][004632.281sec][2014-07-17T18:19:54.630Z][SetCompilerThreshold][10]
+[001228][004632.283sec][2014-07-17T18:19:54.632Z][SetConditionalDisableSymbols]
+[001229][004632.303sec][2014-07-17T18:19:54.651Z][StepEnd=000037msec][Deploy-Step-300-PreBuildSpecSettings.vi]
+[001230][004632.313sec][2014-07-17T18:19:54.661Z][StepBegin][Deploy-Step-320-ExecuteBuildSpecifications.vi]
+[001231][004632.359sec][2014-07-17T18:19:54.707Z][StepEnd=000046msec][Deploy-Step-320-ExecuteBuildSpecifications.vi]
+[001232][004632.369sec][2014-07-17T18:19:54.717Z][StepBegin][Deploy-Step-340-PostBuildSpecResettings.vi]
+[001233][004632.388sec][2014-07-17T18:19:54.736Z][SetCompilerThreshold][5]
+[001234][004632.389sec][2014-07-17T18:19:54.737Z][SetConditionalDisableSymbols]
+[001235][004632.408sec][2014-07-17T18:19:54.756Z][StepEnd=000038msec][Deploy-Step-340-PostBuildSpecResettings.vi]
+[001236][004632.419sec][2014-07-17T18:19:54.767Z][StepBegin][Deploy-Step-360-BuildOutputPostprocessing.vi]
+[001237][004632.464sec][2014-07-17T18:19:54.812Z][StepEnd=000045msec][Deploy-Step-360-BuildOutputPostprocessing.vi]
+[001238][004632.474sec][2014-07-17T18:19:54.822Z][StepBegin][Deploy-Step-380-CreateSetupScript.vi]
+[001239][004632.636sec][2014-07-17T18:19:54.984Z][SetupScript][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T18:19:54.958Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1019
+VersionInfoVersion=1.0.0.1019
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1019
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1019
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; <Setup-End-Anchor>
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+; <Files-End-Anchor>
+
+[Icons]
+; <Icons-Begin-Anchor>
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1019
+SetupWindowTitle=ITS ERP System v1.0.0.1019
+WelcomeLabel1=ITS ERP System v1.0.0.1019 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1019 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1019 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1019 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+; <Run-End-Anchor>
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[001240][004632.678sec][2014-07-17T18:19:55.026Z][StepEnd=000205msec][Deploy-Step-380-CreateSetupScript.vi]
+[001241][004632.688sec][2014-07-17T18:19:55.036Z][StepBegin][Deploy-Step-390-ITSERPSetup.vi]
+[001242][004632.725sec][2014-07-17T18:19:55.073Z][StepEnd=000037msec][Deploy-Step-390-ITSERPSetup.vi]
+[001243][004632.736sec][2014-07-17T18:19:55.084Z][StepBegin][Deploy-Step-400-BuildSetupScript.vi]
+[001244][004633.351sec][2014-07-17T18:19:55.700Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T18:19:54.958Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1019
+VersionInfoVersion=1.0.0.1019
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1019
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1019
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "\\ITS-FS\Production Data\ITS ERP System Deployment Server\Installer Dependencies\LVRTE-2013-SP1-f2\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs external deleteafterinstall; Check: IsLabVIEWMissing
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1019
+SetupWindowTitle=ITS ERP System v1.0.0.1019
+WelcomeLabel1=ITS ERP System v1.0.0.1019 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1019 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1019 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1019 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+Filename: "{tmp}\Install-ITSERP\LVRTE-2013-SP1-f2\setup.exe"; Parameters: "/q /AcceptLicenses yes /r /disableNotificationCheck"; WorkingDir: "{tmp}"; StatusMsg: "Installing National Instruments LabVIEW 2013 Run-Time Engine..."
+
+
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+
+function IsLabVIEWMissing: Boolean; 
+begin 
+  result := not RegKeyExists(HKEY_LOCAL_MACHINE, 'SOFTWARE\National Instruments\LabVIEW Run-Time\13.0'); 
+end;
+// <Code-End-Anchor>
+]
+[001245][004633.352sec][2014-07-17T18:19:55.701Z][Event][Compiling Setup Script...]
+[001246][004633.829sec][2014-07-17T18:19:56.177Z][InstallerCompilationResults][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Run] section, line 99
+Parsing [Files] section, line 56
+Compiling [Code] section
+Creating setup files
+   Updating icons (SETUP.EXE)
+   Compressing Setup program executable
+   Updating version info
+
+
+Successful compile (0.437 sec). Resulting Setup program filename is:
+C:\LabVIEW Development\ITS ERP System\Deployments\ITSERPSystem-1.0.0.1019.exe
+]
+[001247][004633.964sec][2014-07-17T18:19:56.312Z][InstallerSize][788kB]
+[001248][004634.015sec][2014-07-17T18:19:56.363Z][StepEnd=001284msec][Deploy-Step-400-BuildSetupScript.vi]
+[001249][004634.015sec][2014-07-17T18:19:56.363Z][StepBegin][Deploy-Step-420-ApplyDigitalSignature.vi]
+[001250][004634.038sec][2014-07-17T18:19:56.386Z][Skipped][No Certificate specified.]
+[001251][004634.058sec][2014-07-17T18:19:56.406Z][StepEnd=000042msec][Deploy-Step-420-ApplyDigitalSignature.vi]
+[001252][004634.068sec][2014-07-17T18:19:56.416Z][StepBegin][Deploy-Step-440-ApplyLicense.vi]
+[001253][004634.076sec][2014-07-17T18:19:56.424Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001254][004634.100sec][2014-07-17T18:19:56.448Z][StepEnd=000032msec][Deploy-Step-440-ApplyLicense.vi]
+[001255][004634.110sec][2014-07-17T18:19:56.458Z][StepBegin][Deploy-Step-460-UploadRelease.vi]
+[001256][004634.144sec][2014-07-17T18:19:56.493Z][Skipped][Upload disabled via Configuration Dialog.]
+[001257][004634.216sec][2014-07-17T18:19:56.564Z][StepEnd=000107msec][Deploy-Step-460-UploadRelease.vi]
+[001258][004634.227sec][2014-07-17T18:19:56.575Z][StepBegin][Deploy-Step-480-UploadAssetsAndDependencies.vi]
+[001259][004634.235sec][2014-07-17T18:19:56.583Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001260][004634.257sec][2014-07-17T18:19:56.605Z][StepEnd=000029msec][Deploy-Step-480-UploadAssetsAndDependencies.vi]
+[001261][004634.267sec][2014-07-17T18:19:56.615Z][StepBegin][Deploy-Step-500-UploadDocumentation.vi]
+[001262][004634.274sec][2014-07-17T18:19:56.622Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001263][004634.295sec][2014-07-17T18:19:56.643Z][StepEnd=000028msec][Deploy-Step-500-UploadDocumentation.vi]
+[001264][004634.305sec][2014-07-17T18:19:56.653Z][StepBegin][Deploy-Step-520-UpdateReleaseInformation.vi]
+[001265][004634.344sec][2014-07-17T18:19:56.692Z][UpdatedReleaseSnapshot]
+[001266][004634.377sec][2014-07-17T18:19:56.725Z][StepEnd=000072msec][Deploy-Step-520-UpdateReleaseInformation.vi]
+[001267][004634.387sec][2014-07-17T18:19:56.735Z][StepBegin][Deploy-Step-540-CreateChangelog.vi]
+[001268][004634.449sec][2014-07-17T18:19:56.798Z][PersistDirective][C:\LabVIEW Development\ITS ERP System\Deployments\Changelogs\ITSERPSystem-1.0.0.1019-Changelog.txt]
+[001269][004634.474sec][2014-07-17T18:19:56.822Z][StepEnd=000088msec][Deploy-Step-540-CreateChangelog.vi]
+[001270][004634.484sec][2014-07-17T18:19:56.832Z][StepBegin][Deploy-Step-580-CreateDownloadPageSource.vi]
+[001271][004634.625sec][2014-07-17T18:19:56.973Z][DownloadPageSource][<!DOCTYPE HTML>
+<html dir="ltr" lang="en-US">
+
+<head>
+ <meta charset='UTF-8'>
+	<!-- Title -->
+	<title>[Deploy-Page-Caption-HeaderTitle]</title>
+	
+	<!-- SEO -->
+	<meta name="robots" content="noindex,noarchive,nosnippet" />
+
+	<!-- Stylesheets -->
+ 	<link rel="stylesheet" type="text/css" media="all" href="http://deploy.wirebirdlabs.com/Resources/Bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://deploy.wirebirdlabs.com/Resources/FontAwesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://deploy.wirebirdlabs.com/Resources/Themes/Default/style.css" />
+
+	<!-- Scripts -->
+ 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+	<script type='text/javascript' src='http://deploy.wirebirdlabs.com/Resources/Bootstrap/js/bootstrap.min.js'></script>
+
+</head>
+
+<body class="container page-background">
+
+	<div class="container page-canvas">
+		<div class="page-header">
+			<h1 class="page-title page-title-title">[Deploy-Page-Caption-HeaderTitle]</h1>
+		</div>
+
+		<div class="page-body">
+
+			<div class="row page-top-block">
+							<div class="row page-top-block">
+				<div class="span7 offset1 app-intro-block">
+					<h1 class="page-title page-title-featured-release">[Deploy-Page-Caption-Block-FeaturedRelease]</h1>
+					<h5>[Deploy-App-Description]</h5>
+					<div class="featured-changes">
+						<table class="changelog-list table table-striped subtle-shadow">
+							<thead>
+								<tr><th colspan="2">ITS ERP System v1.0.0.1019<span class="release-date">17 Jul 2014</span></th></tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+
+					</div>
+					<a href="NULL" class="download-link btn btn-large btn-success">
+       [Deploy-Page-Caption-DownloadButton]<span class="download-size">788kB</span>
+     </a>
+				</div>
+
+				<div class="contact-block span3">
+					<h1 class="contact-heading">[Deploy-Page-Caption-Block-Support]</h1>
+					<p class="contact-name">[Deploy-App-ContactName]</p>
+					<p class="contact-email">[Deploy-App-ContactEmail]</p>
+					<p class="contact-phone">[Deploy-App-TechSupportPhone]</p>
+					<p class="contact-hours">[Deploy-App-TechSupportHours]</p>
+					<p class="contact-website"><a href="[Deploy-App-TechSupportURL]" target="_blank">[Deploy-Page-Caption-TechSupportLink]</a></p>
+					<a class="documentation-link btn btn-info" href="[Deploy-Page-DocumentationURL]" target="_blank">[Deploy-Page-Caption-DocumentationLink]</a>
+				</div>
+			</div>
+
+			<div class="row accordion changelog-block">
+
+				<h1 class="offset1 page-title-archive">[Deploy-Page-Caption-Block-ArchivedReleases]</h1>
+
+    
+
+			</div>
+
+		</div>
+
+		<div class="page-footer row-fluid">
+			<span class="span12">[Deploy-Page-Caption-Footer]</span>
+		</div>
+  </div>
+	</div>
+
+	<footer class="">
+
+		<p class="page-copyright">Copyright &copy; 2013 [Deploy-App-Publisher].</p>
+
+		<!-- Bootstrap Scripts -->
+		<script type='text/javascript'>
+			jQuery(document).ready( function(){
+				jQuery('*[rel=popover]').popover();
+				jQuery('*[rel=tooltip]').tooltip();} );
+		</script>
+	</footer>
+</body>
+</html>]
+[001272][004634.658sec][2014-07-17T18:19:57.006Z][StepEnd=000174msec][Deploy-Step-580-CreateDownloadPageSource.vi]
+[001273][004634.668sec][2014-07-17T18:19:57.017Z][StepBegin][Deploy-Step-600-UploadDownloadPage.vi]
+[001274][004634.707sec][2014-07-17T18:19:57.056Z][PersistDirective][C:\LabVIEW Development\ITS ERP System\Deployments\Download Pages\ITSERPSystem-1.0.0.1019-DownloadPage.html]
+[001275][004634.707sec][2014-07-17T18:19:57.056Z][Skipped][Download Page update disabled via Configuration Dialog.]
+[001276][004634.737sec][2014-07-17T18:19:57.085Z][StepEnd=000068msec][Deploy-Step-600-UploadDownloadPage.vi]
+[001277][004634.750sec][2014-07-17T18:19:57.098Z][StepBegin][Deploy-Step-620-CreateReleaseManifest.vi]
+[001278][004634.795sec][2014-07-17T18:19:57.143Z][UpdateReleaseManifest]
+[001279][004634.820sec][2014-07-17T18:19:57.168Z][StepEnd=000070msec][Deploy-Step-620-CreateReleaseManifest.vi]
+[001280][004634.830sec][2014-07-17T18:19:57.178Z][StepBegin][Deploy-Step-640-UploadReleaseManifest.vi]
+[001281][004634.859sec][2014-07-17T18:19:57.207Z][PersistDirective][C:\LabVIEW Development\ITS ERP System\Deployments\Release Manifests\ITSERPSystem-1.0.0.1019-ReleaseManifest.json]
+[001282][004634.860sec][2014-07-17T18:19:57.208Z][Skipped][Manifest Deployment disabled via Configuration Dialog.]
+[001283][004634.884sec][2014-07-17T18:19:57.232Z][StepEnd=000054msec][Deploy-Step-640-UploadReleaseManifest.vi]
+[001284][004634.894sec][2014-07-17T18:19:57.242Z][StepBegin][Deploy-Step-700-SaveProject.vi]
+[001286][004635.420sec][2014-07-17T18:19:57.768Z][ProjectSaved]
+[001287][004635.610sec][2014-07-17T18:19:57.958Z][StepEnd=000718msec][Deploy-Step-700-SaveProject.vi]
+[001288][004635.620sec][2014-07-17T18:19:57.968Z][StepBegin][Deploy-Step-720-SourceCodeControlCommit.vi]
+[001301][004635.758sec][2014-07-17T18:19:58.107Z][LoggerShutdown][Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi:2040015>>Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi.ACBRProxyCaller.799000C7]
+[001289][004635.628sec][2014-07-17T18:19:57.976Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001290][004635.652sec][2014-07-17T18:19:58.000Z][StepEnd=000032msec][Deploy-Step-720-SourceCodeControlCommit.vi]
+[001291][004635.662sec][2014-07-17T18:19:58.010Z][StepBegin][Deploy-Step-740-CreateEmailNotification.vi]
+[001292][004635.669sec][2014-07-17T18:19:58.017Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001293][004635.691sec][2014-07-17T18:19:58.039Z][StepEnd=000029msec][Deploy-Step-740-CreateEmailNotification.vi]
+[001294][004635.702sec][2014-07-17T18:19:58.050Z][StepBegin][Deploy-Step-760-SendEmailNotification.vi]
+[001295][004635.709sec][2014-07-17T18:19:58.057Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[001296][004635.738sec][2014-07-17T18:19:58.086Z][StepEnd=000035msec][Deploy-Step-760-SendEmailNotification.vi]
+[001297][004635.747sec][2014-07-17T18:19:58.096Z][SequenceComplete]
+[001298][004635.757sec][2014-07-17T18:19:58.106Z][InstallerSize][788kB]
+[001299][004635.757sec][2014-07-17T18:19:58.106Z][DeploymentTime][0.07min]
+[001300][004635.757sec][2014-07-17T18:19:58.106Z][Result][Deployment Success!]

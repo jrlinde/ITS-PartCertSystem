@@ -1,0 +1,6 @@
+[000022][001991.340sec][2014-07-17T17:35:53.688Z][DeployActivation][Unregistered]
+[000023][001991.722sec][2014-07-17T17:35:54.070Z][DeploymentAborted][In order to perform deployments, Deploy must be registered.]
+[000027][001991.735sec][2014-07-17T17:35:54.083Z][LoggerShutdown][Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi:2040015>>Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi.ACBRProxyCaller.1A60009C]
+[000024][001991.732sec][2014-07-17T17:35:54.080Z][ErrorSummary][DeploymentAborted][Error 42: "DeploymentAborted [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Abort.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.1B4000A1]"]
+[000025][001991.732sec][2014-07-17T17:35:54.080Z][DeploymentTime][0.01min]
+[000026][001991.732sec][2014-07-17T17:35:54.080Z][Result][Deployment Canceled]

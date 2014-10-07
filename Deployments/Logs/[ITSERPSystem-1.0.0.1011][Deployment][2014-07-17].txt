@@ -1,0 +1,1044 @@
+[000160][002585.222sec][2014-07-17T17:45:47.570Z][DeployActivation][Deploy Architect Edition v2013.1.0.1807 registered to Tommy Joyner (ITS)]
+[000161][002585.232sec][2014-07-17T17:45:47.580Z][StepBegin][Deploy-Step-120-Setup.vi]
+[000162][002585.274sec][2014-07-17T17:45:47.623Z][StepEnd=000041msec][Deploy-Step-120-Setup.vi]
+[000163][002585.284sec][2014-07-17T17:45:47.633Z][StepBegin][Deploy-Step-140-SourceCodeControlUpdateCheck.vi]
+[000164][002585.294sec][2014-07-17T17:45:47.643Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[000165][002585.316sec][2014-07-17T17:45:47.665Z][StepEnd=000032msec][Deploy-Step-140-SourceCodeControlUpdateCheck.vi]
+[000166][002585.328sec][2014-07-17T17:45:47.676Z][StepBegin][Deploy-Step-160-PreFlightChecks.vi]
+[000167][002585.335sec][2014-07-17T17:45:47.683Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[000168][002585.356sec][2014-07-17T17:45:47.704Z][StepEnd=000028msec][Deploy-Step-160-PreFlightChecks.vi]
+[000169][002585.366sec][2014-07-17T17:45:47.714Z][StepBegin][Deploy-Step-180-PerformVIAnalyzerTests.vi]
+[000170][002585.373sec][2014-07-17T17:45:47.721Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[000171][002585.396sec][2014-07-17T17:45:47.744Z][StepEnd=000030msec][Deploy-Step-180-PerformVIAnalyzerTests.vi]
+[000172][002585.406sec][2014-07-17T17:45:47.754Z][StepBegin][Deploy-Step-200-PerformUnitTests.vi]
+[000173][002585.415sec][2014-07-17T17:45:47.763Z][ComingSoon][Vote for this ability at: https://connect.wirebirdlabs.com/forums/182345-idea-exchange]
+[000174][002585.439sec][2014-07-17T17:45:47.787Z][StepEnd=000033msec][Deploy-Step-200-PerformUnitTests.vi]
+[000175][002585.449sec][2014-07-17T17:45:47.797Z][StepBegin][Deploy-Step-260-BuildVersionSync.vi]
+[000176][002585.468sec][2014-07-17T17:45:47.816Z][BuildVersionSync]
+[000177][002585.496sec][2014-07-17T17:45:47.844Z][StepEnd=000047msec][Deploy-Step-260-BuildVersionSync.vi]
+[000178][002585.506sec][2014-07-17T17:45:47.854Z][StepBegin][Deploy-Step-280-BuildSpecSettingsSync.vi]
+[000179][002585.530sec][2014-07-17T17:45:47.878Z][BuildInfoSync][Deploy-Deployment-Directory-Logs=C:\LabVIEW Development\ITS ERP System\Deployments\Logs, Deploy-Installer-InstallerFilename=ITSERPSystem-1.0.0.1011, Deploy-App-DisplayName=ITS ERP System, Deploy-App-Publisher=International Test Solutions, Deploy-App-Description=This application is used by this group to achieve this task., Deploy-App-LegalCopyright=Copyright © 2014 ITS]
+[000180][002585.549sec][2014-07-17T17:45:47.897Z][StepEnd=000042msec][Deploy-Step-280-BuildSpecSettingsSync.vi]
+[000181][002585.559sec][2014-07-17T17:45:47.907Z][StepBegin][Deploy-Step-300-PreBuildSpecSettings.vi]
+[000182][002585.578sec][2014-07-17T17:45:47.926Z][SetCompilerThreshold][10]
+[000183][002585.579sec][2014-07-17T17:45:47.927Z][SetConditionalDisableSymbols]
+[000184][002585.599sec][2014-07-17T17:45:47.947Z][StepEnd=000039msec][Deploy-Step-300-PreBuildSpecSettings.vi]
+[000185][002585.609sec][2014-07-17T17:45:47.957Z][StepBegin][Deploy-Step-320-ExecuteBuildSpecifications.vi]
+[000186][002585.659sec][2014-07-17T17:45:48.008Z][StepEnd=000050msec][Deploy-Step-320-ExecuteBuildSpecifications.vi]
+[000187][002585.670sec][2014-07-17T17:45:48.019Z][StepBegin][Deploy-Step-340-PostBuildSpecResettings.vi]
+[000188][002585.689sec][2014-07-17T17:45:48.038Z][SetCompilerThreshold][5]
+[000189][002585.690sec][2014-07-17T17:45:48.039Z][SetConditionalDisableSymbols]
+[000190][002585.710sec][2014-07-17T17:45:48.059Z][StepEnd=000039msec][Deploy-Step-340-PostBuildSpecResettings.vi]
+[000191][002585.722sec][2014-07-17T17:45:48.070Z][StepBegin][Deploy-Step-360-BuildOutputPostprocessing.vi]
+[000192][002585.767sec][2014-07-17T17:45:48.115Z][StepEnd=000044msec][Deploy-Step-360-BuildOutputPostprocessing.vi]
+[000193][002585.778sec][2014-07-17T17:45:48.126Z][StepBegin][Deploy-Step-380-CreateSetupScript.vi]
+[000194][002585.946sec][2014-07-17T17:45:48.294Z][SetupScript][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; <Setup-End-Anchor>
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+; <Files-End-Anchor>
+
+[Icons]
+; <Icons-Begin-Anchor>
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+; <Run-End-Anchor>
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000195][002585.985sec][2014-07-17T17:45:48.333Z][StepEnd=000207msec][Deploy-Step-380-CreateSetupScript.vi]
+[000196][002585.995sec][2014-07-17T17:45:48.343Z][StepBegin][Deploy-Step-390-ITSERPSetup.vi]
+[000197][002586.033sec][2014-07-17T17:45:48.381Z][StepEnd=000037msec][Deploy-Step-390-ITSERPSetup.vi]
+[000198][002586.043sec][2014-07-17T17:45:48.392Z][StepBegin][Deploy-Step-400-BuildSetupScript.vi]
+[000199][002586.775sec][2014-07-17T17:45:49.123Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "<ProjectDir>\Deploy\Installer Dependencies\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs deleteafterinstall
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000200][002586.775sec][2014-07-17T17:45:49.123Z][Event][Compiling Setup Script...]
+[000201][002586.845sec][2014-07-17T17:45:49.194Z][InstallerCompilationError][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Files] section, line 56
+][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000202][002587.799sec][2014-07-17T17:45:50.147Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "<ProjectDir>\Deploy\Installer Dependencies\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs deleteafterinstall
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000203][002587.800sec][2014-07-17T17:45:50.148Z][Event][Compiling Setup Script...]
+[000204][002587.859sec][2014-07-17T17:45:50.207Z][InstallerCompilationError][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Files] section, line 56
+][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000205][002589.367sec][2014-07-17T17:45:51.715Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "<ProjectDir>\Deploy\Installer Dependencies\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs deleteafterinstall
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000206][002589.367sec][2014-07-17T17:45:51.715Z][Event][Compiling Setup Script...]
+[000207][002589.438sec][2014-07-17T17:45:51.786Z][InstallerCompilationError][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Files] section, line 56
+][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000208][002591.438sec][2014-07-17T17:45:53.786Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "<ProjectDir>\Deploy\Installer Dependencies\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs deleteafterinstall
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000209][002591.438sec][2014-07-17T17:45:53.786Z][Event][Compiling Setup Script...]
+[000210][002591.515sec][2014-07-17T17:45:53.863Z][InstallerCompilationError][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Files] section, line 56
+][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000211][002593.982sec][2014-07-17T17:45:56.330Z][SetupScriptToCompile][
+
+; Inno Setup Script automatically generated with API from Wirebird Labs: Expert Toolkits for LabVIEW™
+; Wirebird Labs: Deploy™ © 2012-2013 Wirebird Labs LLC. All rights reserved.
+; Inno Setup Copyright © 1997-2013 Jordan Russell. All rights reserved.
+; Generated 2014-07-17T17:45:48.266Z
+[Setup]
+; <Setup-Begin-Anchor>
+AppName=ITS ERP System
+AppVersion=1.0.0.1011
+VersionInfoVersion=1.0.0.1011
+DefaultDirName={pf}\International Test Solutions\ITS ERP System
+AppId={{9D4B4D53-99BD-47D0-ADE0-ABD9054F35B5}
+AppVerName=ITS ERP System v1.0.0.1011
+AppContact="Tommy Joyner" <tommyj@inttest.net>
+AppPublisher=International Test Solutions
+AppPublisherURL=http://www.inttest.net
+AppSupportPhone=7752849220
+AppSupportURL=
+WizardImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+WizardSmallImageFile=C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+SetupIconFile=DefaultIcon.ico
+UninstallDisplayIcon=DefaultIcon.ico
+AppCopyright=Copyright © 2014 ITS
+OutputDir=C:\LabVIEW Development\ITS ERP System\Deployments
+OutputBaseFilename=ITSERPSystem-1.0.0.1011
+Encryption=no
+Password=
+Compression=none
+DisableWelcomePage=no
+DisableReadyPage=yes
+DisableDirPage=yes
+DisableProgramGroupPage=yes
+DisableFinishedPage=no
+; Customized Setup Directives
+AppMutex=InternationlTestSolutionsITSERPSystem
+
+[Types]
+; <Types-Begin-Anchor>
+; <Types-End-Anchor>
+
+[Components]
+; <Components-Begin-Anchor>
+; <Components-End-Anchor>
+
+[Tasks]
+; <Tasks-Begin-Anchor>
+; <Tasks-End-Anchor>
+
+[Dirs]
+; <Dirs-Begin-Anchor>
+; <Dirs-End-Anchor>
+
+[Files]
+; <Files-Begin-Anchor>
+Source: "<ProjectDir>\Deploy\Installer Dependencies\*"; DestDir: "{tmp}\Install-ITSERP"; Flags: recursesubdirs deleteafterinstall
+
+[Icons]
+Name: "{commondesktop}\ITS ERP System"; Filename: "{app}\ITS ERP System.exe"
+; <Icons-End-Anchor>
+
+[INI]
+; <INI-Begin-Anchor>
+; <INI-End-Anchor>
+
+[InstallDelete]
+; <InstallDelete-Begin-Anchor>
+; <InstallDelete-End-Anchor>
+
+[Languages]
+; <Languages-Begin-Anchor>
+; <Languages-End-Anchor>
+
+[Messages]
+; <Messages-Begin-Anchor>
+SetupAppTitle=ITS ERP System v1.0.0.1011
+SetupWindowTitle=ITS ERP System v1.0.0.1011
+WelcomeLabel1=ITS ERP System v1.0.0.1011 Setup
+WelcomeLabel2=This will install ITS ERP System v1.0.0.1011 on your computer.%n%nIt is recommended that you close all other applications before continuing.
+FinishedHeadingLabel=ITS ERP System v1.0.0.1011 Setup Complete
+FinishedLabelNoIcons=Setup has finished installing ITS ERP System v1.0.0.1011 on your computer.
+; <Messages-End-Anchor>
+
+[CustomMessages]
+; <CustomMessages-Begin-Anchor>
+; <CustomMessages-End-Anchor>
+
+[LangOptions]
+; <LangOptions-Begin-Anchor>
+; <LangOptions-End-Anchor>
+
+[Registry]
+; <Registry-Begin-Anchor>
+; <Registry-End-Anchor>
+
+[Run]
+; <Run-Begin-Anchor>
+Filename: "{app}\ITS ERP System.exe"; Description: "Launch ITS ERP System"; Flags: postinstall nowait
+
+
+[UninstallDelete]
+; <UninstallDelete-Begin-Anchor>
+; <UninstallDelete-End-Anchor>
+
+[UninstallRun]
+; <UninstallRun-Begin-Anchor>
+; <UninstallRun-End-Anchor>
+
+[Code]
+// <Code-Begin-Anchor>
+// <Code-End-Anchor>
+]
+[000212][002593.982sec][2014-07-17T17:45:56.330Z][Event][Compiling Setup Script...]
+[000213][002594.047sec][2014-07-17T17:45:56.395Z][InstallerCompilationError][Inno Setup 5 Command-Line Compiler
+Copyright (C) 1997-2012 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2012 Martijn Laan
+Inno Setup Preprocessor
+Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+
+Compiler engine version: Inno Setup 5.5.3 (u)
+
+[ISPP] Preprocessing.
+[ISPP] Preprocessed.
+
+Parsing [Setup] section, line 9
+Parsing [Setup] section, line 10
+Parsing [Setup] section, line 11
+Parsing [Setup] section, line 12
+Parsing [Setup] section, line 13
+Parsing [Setup] section, line 14
+Parsing [Setup] section, line 15
+Parsing [Setup] section, line 16
+Parsing [Setup] section, line 17
+Parsing [Setup] section, line 18
+Parsing [Setup] section, line 19
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 31
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 33
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 36
+Reading file (WizardImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_SideBanner.bmp
+Reading file (WizardSmallImageFile)
+   File: C:\LabVIEW Development\ITS ERP System\Deploy\ITS ERP Pic\ERP System_TopImage.bmp
+Preparing Setup program executable
+   Updating icons (SETUP.E32)
+Determining language code pages
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   File: C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\Default.isl
+   Messages in script file
+Reading [Code] section
+Parsing [Icons] section, line 59
+Parsing [Run] section, line 98
+Parsing [Files] section, line 56
+][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000214][002594.099sec][2014-07-17T17:45:56.448Z][StepEnd=008035msec][Deploy-Step-400-BuildSetupScript.vi][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000215][002594.109sec][2014-07-17T17:45:56.458Z][StepBegin][Deploy-Step-420-ApplyDigitalSignature.vi]
+[000216][002594.145sec][2014-07-17T17:45:56.493Z][StepEnd=000034msec][Deploy-Step-420-ApplyDigitalSignature.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-420-ApplyDigitalSignature.vi:7400001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000217][002594.155sec][2014-07-17T17:45:56.503Z][StepBegin][Deploy-Step-440-ApplyLicense.vi]
+[000218][002594.183sec][2014-07-17T17:45:56.531Z][StepEnd=000028msec][Deploy-Step-440-ApplyLicense.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-440-ApplyLicense.vi:1670001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000219][002594.194sec][2014-07-17T17:45:56.542Z][StepBegin][Deploy-Step-460-UploadRelease.vi]
+[000220][002594.274sec][2014-07-17T17:45:56.622Z][StepEnd=000080msec][Deploy-Step-460-UploadRelease.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-460-UploadRelease.vi:2020001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000221][002594.284sec][2014-07-17T17:45:56.632Z][StepBegin][Deploy-Step-480-UploadAssetsAndDependencies.vi]
+[000222][002594.325sec][2014-07-17T17:45:56.673Z][StepEnd=000041msec][Deploy-Step-480-UploadAssetsAndDependencies.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-480-UploadAssetsAndDependencies.vi:3620001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000223][002594.335sec][2014-07-17T17:45:56.683Z][StepBegin][Deploy-Step-500-UploadDocumentation.vi]
+[000224][002594.363sec][2014-07-17T17:45:56.711Z][StepEnd=000028msec][Deploy-Step-500-UploadDocumentation.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-500-UploadDocumentation.vi:6200001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000225][002594.373sec][2014-07-17T17:45:56.721Z][StepBegin][Deploy-Step-520-UpdateReleaseInformation.vi]
+[000226][002594.412sec][2014-07-17T17:45:56.760Z][UpdatedReleaseSnapshot]
+[000227][002594.437sec][2014-07-17T17:45:56.785Z][StepEnd=000064msec][Deploy-Step-520-UpdateReleaseInformation.vi]
+[000228][002594.447sec][2014-07-17T17:45:56.795Z][StepBegin][Deploy-Step-540-CreateChangelog.vi]
+[000229][002594.516sec][2014-07-17T17:45:56.865Z][StepEnd=000068msec][Deploy-Step-540-CreateChangelog.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-540-CreateChangelog.vi:1570001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000230][002594.526sec][2014-07-17T17:45:56.875Z][StepBegin][Deploy-Step-580-CreateDownloadPageSource.vi]
+[000231][002594.698sec][2014-07-17T17:45:57.046Z][StepEnd=000170msec][Deploy-Step-580-CreateDownloadPageSource.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-580-CreateDownloadPageSource.vi:2350001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000232][002594.709sec][2014-07-17T17:45:57.057Z][StepBegin][Deploy-Step-600-UploadDownloadPage.vi]
+[000233][002594.761sec][2014-07-17T17:45:57.109Z][StepEnd=000051msec][Deploy-Step-600-UploadDownloadPage.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-600-UploadDownloadPage.vi:1600001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000234][002594.771sec][2014-07-17T17:45:57.119Z][StepBegin][Deploy-Step-620-CreateReleaseManifest.vi]
+[000235][002594.806sec][2014-07-17T17:45:57.154Z][StepEnd=000035msec][Deploy-Step-620-CreateReleaseManifest.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-620-CreateReleaseManifest.vi:970001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000236][002594.817sec][2014-07-17T17:45:57.165Z][StepBegin][Deploy-Step-640-UploadReleaseManifest.vi]
+[000237][002594.875sec][2014-07-17T17:45:57.224Z][StepEnd=000057msec][Deploy-Step-640-UploadReleaseManifest.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-640-UploadReleaseManifest.vi:5040001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000238][002594.885sec][2014-07-17T17:45:57.234Z][StepBegin][Deploy-Step-700-SaveProject.vi]
+[000240][002595.410sec][2014-07-17T17:45:57.758Z][ProjectSaved]
+[000241][002595.752sec][2014-07-17T17:45:58.100Z][StepEnd=000865msec][Deploy-Step-700-SaveProject.vi]
+[000265][002596.088sec][2014-07-17T17:45:58.437Z][LoggerShutdown][Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi:2040015>>Deploy-FTW-EventLogger.lvclass:Deploy-FTW-Log-Process.vi.ACBRProxyCaller.277000C7]
+[000242][002595.763sec][2014-07-17T17:45:58.111Z][StepBegin][Deploy-Step-720-SourceCodeControlCommit.vi]
+[000243][002595.795sec][2014-07-17T17:45:58.143Z][StepEnd=000031msec][Deploy-Step-720-SourceCodeControlCommit.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-720-SourceCodeControlCommit.vi:6620001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000244][002595.806sec][2014-07-17T17:45:58.154Z][StepBegin][Deploy-Step-740-CreateEmailNotification.vi]
+[000245][002595.835sec][2014-07-17T17:45:58.183Z][StepEnd=000029msec][Deploy-Step-740-CreateEmailNotification.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-740-CreateEmailNotification.vi:3380001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000246][002595.845sec][2014-07-17T17:45:58.193Z][StepBegin][Deploy-Step-760-SendEmailNotification.vi]
+[000247][002595.885sec][2014-07-17T17:45:58.233Z][StepEnd=000039msec][Deploy-Step-760-SendEmailNotification.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-760-SendEmailNotification.vi:5510001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000248][002595.895sec][2014-07-17T17:45:58.243Z][SequenceComplete]
+[000249][002595.905sec][2014-07-17T17:45:58.253Z][ErrorSummary][Deploy-Step-400-BuildSetupScript.vi][Error 2: "Error on line 56 in <stdin>: No files found matching "C:\Program Files (x86)\National Instruments\LabVIEW 2013\resource\Framework\Providers\Wirebird Labs LLC\Deploy\Support\Setup Authoring\Inno\Inno Setup Redistributable\<ProjectDir>\Deploy\Installer Dependencies\*" Compile aborted. [Deploy-InnoSetupAPI.lvclass:Deploy-InnoSetup-Compile.vi>>Deploy-Step-400-BuildSetupScript.vi:1810001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000250][002595.905sec][2014-07-17T17:45:58.253Z][ErrorSummary][Deploy-Step-420-ApplyDigitalSignature.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-420-ApplyDigitalSignature.vi:7400001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000251][002595.906sec][2014-07-17T17:45:58.254Z][ErrorSummary][Deploy-Step-440-ApplyLicense.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-440-ApplyLicense.vi:1670001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000252][002595.906sec][2014-07-17T17:45:58.254Z][ErrorSummary][Deploy-Step-460-UploadRelease.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-460-UploadRelease.vi:2020001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000253][002595.906sec][2014-07-17T17:45:58.254Z][ErrorSummary][Deploy-Step-480-UploadAssetsAndDependencies.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-480-UploadAssetsAndDependencies.vi:3620001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000254][002595.907sec][2014-07-17T17:45:58.255Z][ErrorSummary][Deploy-Step-500-UploadDocumentation.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-500-UploadDocumentation.vi:6200001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000255][002595.907sec][2014-07-17T17:45:58.255Z][ErrorSummary][Deploy-Step-540-CreateChangelog.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-540-CreateChangelog.vi:1570001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000256][002595.907sec][2014-07-17T17:45:58.255Z][ErrorSummary][Deploy-Step-580-CreateDownloadPageSource.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-580-CreateDownloadPageSource.vi:2350001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000257][002595.908sec][2014-07-17T17:45:58.256Z][ErrorSummary][Deploy-Step-600-UploadDownloadPage.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-600-UploadDownloadPage.vi:1600001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000258][002595.908sec][2014-07-17T17:45:58.256Z][ErrorSummary][Deploy-Step-620-CreateReleaseManifest.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-620-CreateReleaseManifest.vi:970001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000259][002595.908sec][2014-07-17T17:45:58.256Z][ErrorSummary][Deploy-Step-640-UploadReleaseManifest.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-640-UploadReleaseManifest.vi:5040001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000260][002595.909sec][2014-07-17T17:45:58.257Z][ErrorSummary][Deploy-Step-720-SourceCodeControlCommit.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-720-SourceCodeControlCommit.vi:6620001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000261][002595.909sec][2014-07-17T17:45:58.257Z][ErrorSummary][Deploy-Step-740-CreateEmailNotification.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-740-CreateEmailNotification.vi:3380001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000262][002595.910sec][2014-07-17T17:45:58.258Z][ErrorSummary][Deploy-Step-760-SendEmailNotification.vi][Error 42: "Step skipped: upstream error in "Deploy-Step-400-BuildSetupScript.vi" [Deploy-FTW-ERR-ThrowGenericError.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-SkipOnUpstreamError.vi>>Deploy-Step-760-SendEmailNotification.vi:5510001>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-ExecuteBuildStep.vi>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi:3750002>>Deploy-DeploymentEngine.lvclass:Deploy-Engine-Process.vi.ACBRProxyCaller.285000B4]"]
+[000263][002595.910sec][2014-07-17T17:45:58.258Z][DeploymentTime][0.19min]
+[000264][002595.910sec][2014-07-17T17:45:58.258Z][Result][Deployment failed -- inspect the errors above to try to troubleshoot the issue. Get in touch at connect.wirebirdlabs.com if you get stuck, or to report a bug!]
