@@ -373,7 +373,7 @@
 				</Item>
 				<Item Name="ERP-CreateWorkOrder.lvclass" Type="LVClass" URL="../Actors/ERP-Create Work Order/ERP-CreateWorkOrder.lvclass"/>
 			</Item>
-			<Item Name="ActorPlugin-001-Template.vit" Type="VI" URL="../ERP-Container/ERP-ActorPlugins/ActorPlugin-001-Template.vit"/>
+			<Item Name="ActorPlugin-001-Template.vit" Type="VI" URL="../PCert-Container/ERP-ActorPlugins/ActorPlugin-001-Template.vit"/>
 		</Item>
 		<Item Name="PCertContainer" Type="Folder">
 			<Item Name="Configuration Page Plugin" Type="Folder">
@@ -396,6 +396,7 @@
 			<Item Name="QMDS.udl" Type="Document" URL="../UDL/QMDS.udl"/>
 			<Item Name="UDL-FileLibraryPath.vi" Type="VI" URL="../UDL/UDL-FileLibraryPath.vi"/>
 		</Item>
+		<Item Name="DatabaseManipulation.vit" Type="VI" URL="../WIP/DatabaseManipulation.vit"/>
 		<Item Name="ITSERP-Automation-LaunchConfigDialog.vi" Type="VI" URL="../ITSERP-Automation-LaunchConfigDialog.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -811,6 +812,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Create Label Button.ctl" Type="VI" URL="../../Inventory System/controls/Create Label Button.ctl"/>
+			<Item Name="Database-API.lvclass" Type="LVClass" URL="../../Reuse Library/Database API/Database-API.lvclass"/>
 			<Item Name="Deploy-Change-Type.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Wirebird Labs LLC/Deploy/Support/Changelog/Item/Deploy-Change-Type.ctl"/>
 			<Item Name="Deploy-Change-Weight.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Wirebird Labs LLC/Deploy/Support/Changelog/Item/Deploy-Change-Weight.ctl"/>
 			<Item Name="Deploy-Change.lvclass" Type="LVClass" URL="/&lt;resource&gt;/Framework/Providers/Wirebird Labs LLC/Deploy/Support/Changelog/Item/Deploy-Change.lvclass"/>
